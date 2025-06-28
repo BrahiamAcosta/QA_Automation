@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.openqa.selenium.WebDriver;
@@ -29,8 +30,7 @@ public class RegistrationStepDefinition {
     //Pasos comunes a varios escenarios
     @Given("Estoy en la pagina de registro")
     public void estoyEnLaPaginaDeRegistro() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        //user.wasAbleTo(Open.browserOn());
     }
     @When("envio el formulario")
     public void envioElFormulario() {
