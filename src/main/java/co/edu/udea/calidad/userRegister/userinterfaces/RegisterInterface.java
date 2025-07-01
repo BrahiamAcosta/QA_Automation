@@ -3,7 +3,7 @@ package co.edu.udea.calidad.userRegister.userinterfaces;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class UserInterface extends PageObject {
+public class RegisterInterface extends PageObject {
 
     public static final Target REGISTER_BUTTON = Target.the("Register button")
             .locatedBy("//button[normalize-space(text())='Register']");
@@ -18,4 +18,10 @@ public class UserInterface extends PageObject {
             .locatedBy("//*[@id='password']");
     public static final Target CONFIRM_PASSWORD_FIELD = Target.the("Password field")
             .locatedBy("//*[@id='confirmPassword']");
+    public static final Target PASSWORD_DONT_MATCH = Target.the("Password don't match")
+            .locatedBy("//div[normalize-space(text())='Passwords do not match']");
+    public static final Target RESPONSE_MESSAGE_ERROR = Target.the("Response message error")
+            .locatedBy(".result.alert.alert-danger");
+    public static final Target RESPONSE_MESSAGE_SUCCESS = Target.the("Response message success")
+            .locatedBy(".result.alert.alert-success");
 }
